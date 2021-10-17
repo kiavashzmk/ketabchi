@@ -42,7 +42,6 @@ function readyOrders(allOrders, stockProducts) {
       }
     });
     if (availabeItems === order.items.length) {
-      console.log();
       fullfiled.push(order);
       // updating the stock.
       stockProducts = _stock;
@@ -64,7 +63,6 @@ function _readyOrders(allOrders, stockProducts) {
       }
     });
     if (availabeItems === order.items.length) {
-      console.log();
       fullfiled.push(order);
       order.items.forEach((item) => {
         const stockProduct = fetchProductById(item.productCode, stockProducts);
